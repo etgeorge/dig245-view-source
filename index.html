@@ -6,35 +6,64 @@
     <!-- meta tags, links to css, etc. -->
     <title>DIG 245 View Source</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- visible content goes here -->
     <h1>DIG 245 View Source</h1>
-    <p class="intro"></p>
-    
-    <div class="card">
-        <label for="steps">How to Open Dev-Tools in <b>Chrome</b></label>
-        <ol class="steps">
-            <li>Visit a website that you find cool or complex</li>
-            <li>Hold down the FN key</li>
-            <li>Press the F12 key</li>
-        </ol>
-    </div>
-    <div class="card">
-        <label for="steps">Things to do with Dev-Tools</label>
-        <ul class="steps">
-            <li>Toggle CSS properties in the Style tab</li>
-            <li>Run Javascript in the console</li>
-            <li>Isolate certain HTML elements with the pointer tool in the top left corner</li>
-        </ul>
+    <div class="grid">
+        <div class="card">
+            <label for="steps">How to Open Dev-Tools in <b>Chrome</b></label>
+            <ol class="steps">
+                <li>Visit a website that you find cool or complex</li>
+                <li>Hold down the FN key</li>
+                <li>Press the F12 key</li>
+            </ol>
+        </div>
+        <div class="card">
+            <label for="steps">Things to do with Dev-Tools</label>
+            <ul class="steps">
+                <li>Toggle CSS properties in the Style tab</li>
+                <li>Run Javascript in the console</li>
+                <li>Isolate certain HTML elements with the pointer tool in the top left corner</li>
+            </ul>
+        </div>
+        <div class="card img">
+            <img src="./assets/img/unicorn.png">
+        </div>
+        <div class="card img">
+            <p>
+                This <a href="https://web.archive.org/web/20180815003028/https://ew.com/" target="_blank">EW archive
+                    page</a> has an ASCII unicorn hidden in the source code! To access, click the link
+                and open the dev-tools according to the steps listed above. Then, you should be able
+                to see the unicorn in your own browser!
+            </p>
+            <p>
+                Using the dev-tools is like looking at the instructions for a really big Lego Set. 
+                You can see how the pieces are put together beyond the surface level and recognize common
+                patterns and elements.
+            </p>
+        </div>
+        <div class="card img">
+            <img src="https://caradonna-prod.s3.us-east-2.amazonaws.com/prod/s3fs-public/image002.jpg"
+                alt="photo of coral reef snake">
+        </div>
     </div>
 
-    
 
-    <!-- <script>alert("Hello")</script> -->
-    <script>console.log("hello");</script>
+
+    <script>
+        let timer;
+        console.time(timer);
+        alert("Click fast! This website has a secret hidden...");
+        console.log("It took you this long to click away the alert:");
+        console.timeLog(timer);
+        console.log("Keep working on that speedy workflow!");
+    </script>
 </body>
 
 </html>
